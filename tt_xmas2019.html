@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Xmas SVG</title>
+
+		<style>
+			body
+			{
+				background-color: rgba(0, 0, 50, 1);
+			}
+
+			#svgContainer
+			{
+				width: 500px;
+				margin: 5em auto 0 auto;
+			}
+
+			svg
+			{
+				width: 500px;
+				height: 500px;
+				outline: 0px solid #FF0000;
+			}
+
+			.tree
+			{
+				stroke: rgba(0, 255, 0, 1);
+				stroke-width: 1;
+				fill: rgb(0, 100, 0);
+			}
+
+			.ball
+			{
+				stroke: rgba(255, 200, 100, 0.3);
+				stroke-width: 1;
+				fill: url(#ballGradient);
+			}
+
+			.toplight
+			{
+				stroke: rgba(255, 255, 200, 0.3);
+				stroke-width: 15;
+				fill: rgba(255, 255, 200, 0.8);
+			}
+
+			text
+			{
+				stroke: rgba(255, 255, 255, 1);
+				stroke-width: 1;
+				fill: rgba(255, 0, 0, 1);
+				font: bold 50px georgia;
+			}			
+		</style>
+	</head>
+
+	<body>
+		<div id="svgContainer">
+			<svg>
+				<defs>
+					<radialGradient id="ballGradient" cx="50%" cy="50%" r="80%" fx="10%" fy="50%">
+						<stop offset="10%" style="stop-color:rgb(255, 200, 100); stop-opacity:1" />
+						<stop offset="100%" style="stop-color:rgb(255, 50, 0); stop-opacity:1" />
+					</radialGradient>
+				</defs>
+
+				<text x="150" y="75">MERRY</text>
+				<text x="80" y="455">CHRISTMAS</text>
+
+				<circle cx="250" cy="100" r="5" class="toplight">
+					<animate attributeName="r" from="5" to="6" dur="0.1s" repeatCount="indefinite" />
+				</circle>
+
+				<path d="
+				M 250 100
+				q 0 10 -30 30 l 10 0 
+				q 0 10 -30 30 l 10 0
+				q 0 20 -30 40 l 10 0 
+				q 0 20 -40 50 l 10 0 
+				q 0 30 -40 70 l 10 0 
+				q 0 40 -40 80 l 320 0 
+				q -40 -40 -40 -80 l 10 0 
+				q -40 -30 -40 -70 l 10 0  
+				q -30 -20 -40 -50 l 10 0
+				q -20 -10 -30 -40 l 10 0
+				q -20 -10 -30 -30 l 10 0
+				q -20 -10 -30 -30
+				" class="tree"/>
+
+				<circle cx="270" cy="150" r="5" class="ball">
+					<animate attributeName="stroke-width" from="1" to="10" dur="2.5s" repeatCount="indefinite" />
+				</circle>
+
+				<circle cx="240" cy="290" r="3" class="ball">
+					<animate attributeName="stroke-width" from="1" to="10" dur="2s" repeatCount="indefinite" />
+				</circle>
+
+				<circle cx="150" cy="330" r="7" class="ball">
+					<animate attributeName="stroke-width" from="1" to="10" dur="2.5s" repeatCount="indefinite" />
+				</circle>
+
+				<circle cx="290" cy="250" r="5" class="ball">
+					<animate attributeName="stroke-width" from="1" to="10" dur="2s" repeatCount="indefinite" />
+				</circle>
+
+				<circle cx="220" cy="180" r="6" class="ball">
+					<animate attributeName="stroke-width" from="1" to="10" dur="1.5s" repeatCount="indefinite" />
+				</circle>
+
+				<circle cx="170" cy="260" r="3" class="ball">
+					<animate attributeName="stroke-width" from="1" to="10" dur="1.5s" repeatCount="indefinite" />
+				</circle>
+
+				<circle cx="280" cy="320" r="5" class="ball">
+					<animate attributeName="stroke-width" from="1" to="10" dur="2s" repeatCount="indefinite" />
+				</circle>
+
+				<circle cx="230" cy="380" r="4" class="ball">
+					<animate attributeName="stroke-width" from="1" to="10" dur="2.5s" repeatCount="indefinite" />
+				</circle>
+
+				<circle cx="350" cy="360" r="7" class="ball">
+					<animate attributeName="stroke-width" from="1" to="10" dur="2s" repeatCount="indefinite" />
+				</circle>
+
+				<circle cx="220" cy="230" r="8" class="ball">
+					<animate attributeName="stroke-width" from="1" to="10" dur="2.5s" repeatCount="indefinite" />
+				</circle>
+
+				<circle cx="330" cy="290" r="5" class="ball">
+					<animate attributeName="stroke-width" from="1" to="10" dur="2s" repeatCount="indefinite" />
+				</circle>
+
+				<circle cx="240" cy="130" r="3" class="ball">
+					<animate attributeName="stroke-width" from="1" to="10" dur="2s" repeatCount="indefinite" />
+				</circle>
+				SVG not supported
+			</svg>
+		</div>
+	</body>
+</html>
