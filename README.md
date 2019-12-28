@@ -17,3 +17,5 @@ This SVG animation is made out of a few parts. The *svgContainer* div moves the 
 
 ## Text
 - text tags, pixel-adjusted position.
+
+*Note: Animations do not work in Internet Explorer and Safari.*
